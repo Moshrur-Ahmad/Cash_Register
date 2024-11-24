@@ -10,5 +10,12 @@ public class Main {
         cashRegister1.receivePayment(100,3,5,2,60);
         double change=cashRegister1.giveChange();
         System.out.printf("%.2f",change);
+        cashRegister2.recordPurchase(2);
+        cashRegister2.recordPurchase(2.3);
+        cashRegister2.recordPurchase(1.67);
+        cashRegister2.recordPurchase(3.67);
+        cashRegister2.receivePayment(20,4,5,2,6);
+        change=cashRegister2.giveChange();
+        System.out.printf("\n%.2f",change);
     }
 }
